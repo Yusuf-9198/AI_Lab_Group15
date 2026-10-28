@@ -7,7 +7,7 @@ def get_manhattan(board):
     for idx, val in enumerate(board):
         if val == 0:
             continue
-        target_idx = val - 1
+        target_idx = val -1
         r1, c1 = divmod(idx, 3)
         r2, c2 = divmod(target_idx, 3)
         dist += abs(r1 - r2) + abs(c1 - c2)
